@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <title>JS Example</title>
+</head>
+<body>
+    <h1 id="abc">JS Example</h1>
+    <form action="home.html" onsubmit="return validate()">
+        Username:<input type="text" name="username" id="username" value=""  />
+        <p id="umsg"></p>
+        Password: <input type="password" name="password" id="password" value=""/>
+        <p id="pmsg"></p>
+        <input type="submit" name="submit" id="submit" value="submit" />
+        <p id="vmsg"></p>
+    </form>
+    <script>
+        //name = "alamin";
+        //var name = "alamin";
+        let name = "alamin";
+        //const name = 10;
+        let std = [1, 'alamin', 2.5, 'alamin@aiub.edu'];
+        std[0];
+        
+        for(let i=0; i<10; i++){
+            console.log(i);
+        }
+
+        function abc(a, b){   
+            return a+b;
+        }
+
+        let f1 = function(a,b){
+            return a+b;
+        }
+        //let c = f1(10, 20);
+        let f2 = (a,b)=>a+b;
+        //console.log(f2(20,30));
+
+        // if(1 === "1"){
+
+        // }else{
+
+        // }
+        console.log('test');
+        //alert('test');
+        //document.write('<h1>TESt</h1>');
+
+        //let head = document.getElementsByTagName('h1')[0];
+        function abc(){
+            let head = document.getElementById('head');
+            head.innerHTML = "TESTING from JS";
+        }
+
+        function test(){
+            let username = document.getElementById('username').value;
+            let msg = document.getElementById('msg');
+
+            if(username == ""){
+                msg.innerHTML = "please type username first!";
+                msg.style.color = 'red';
+            }else{
+                document.getElementById('abc').innerHTML = username;
+                msg.innerHTML = "";
+            }
+        }
+
+        function validate(){
+            //validate username (null check)
+            //validate password (null check)
+            //validate username === password
+
+            return true;
+        }
+    </script>
+</body>
+</html>
